@@ -1,0 +1,59 @@
+.modal {
+    width: 250px;
+    min-height: 260px;
+    box-shadow: 16px 0px 52px 0px #09103533;
+    border-radius: 16px;
+    position: fixed;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__title {
+        color: #60227D;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__result {
+        color: #60227D;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__value {
+        font-size: 17px;
+        font-weight: 600;
+        color: #60227D;
+    }
+}

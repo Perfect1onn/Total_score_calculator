@@ -1,0 +1,26 @@
+@import "blocks/button.scss";
+@import "blocks/modal.scss";
+@import "blocks/input.scss";
+@import "blocks/calculate-form.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.unshow {
+    display: none;
+}

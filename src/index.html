@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total score calculator</title>
+    <link href="styles/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculate-form">
+      <span class="calculate-form__title">Вычисление итогого балла</span>
+      <div class="calculate-form__item">
+        <span class="calculate-form__item-title"
+          >Количество часов предмета</span
+        >
+        <input id="hourCount" placeholder="60" required />
+      </div>
+      <div class="calculate-form__item">
+        <span class="calculate-form__item-title">Оценки за семестр</span>
+        <input id="valueCount" placeholder="8,9,9,6,8" required />
+      </div>
+      <div class="calculate-form__item">
+        <span class="calculate-form__item-title" required>Количество Н/Б</span>
+        <input id="nbCount" placeholder="2" />
+      </div>
+      <div class="calculate-form__item">
+        <span class="calculate-form__item-title" required
+          >Количество сам.работ</span
+        >
+        <input id="selfWorkCount" placeholder="10" />
+      </div>
+      <div class="calculate-form__item" required>
+        <button id="btnCalculate">Рассчитать итоговый балл</button>
+      </div>
+    </div>
+
+    <div class="modal unshow">
+        <div class="modal__header">
+          <span class="modal__title">Результат</span>
+          <img src="img/closeButton.png" id="closeButton" />
+        </div>
+        <div class="modal__body">
+          <span class="modal__info">Итоговый балл:</span>
+          <span id="result" class="modal__result">48.6</span>
+        </div>
+        <div class="modal__information unshow">
+          <div class="modal__item">
+            Средний балл:<span class="modal__value" id="averageValue">9.7</span>
+          </div>
+          <div class="modal__item">
+            Балл посещяемости:<span class="modal__value" id="nbValue">10</span>
+          </div>
+          <div class="modal__item">
+            Сам.работы:<span class="modal__value" id="worksValue">10</span>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <button id="more">Подробная информация</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
